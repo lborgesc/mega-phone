@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA PHONE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div id="container">
+            <div id="cadastro-login">
+                <input type="checkbox" id="sing-up">
+                <input type="checkbox" id="sing-in">
+
+
+                <label for="sing-up" id="btn-cadastro" type="button">Sign up</label>
+                <label for="sing-in" id="-btn-login" type="button">Sign in</label>
+
+                <label for="sing-in" id="close-login" type="button" onclick=clearlogin()> <i
+                        class="fas fa-times"></i></label>
+                <label for="sing-up" id="close-cadastro" type="button" onclick=clearcadastro()> <i
+                        class="fas fa-times"></i></label>
+
+
+                <section id="login">
+
+                    <i class="fas fa-mobile-alt"></i>
+                    <h1>Sign in to Mega Phone</h1>
+
+                    <form action="">
+
+                        <label for="username">Username or email address</label>
+                        <input type="text" id="username" required>
+
+                        <label for="password" id="forget">Password
+                            <a href="">Forget password?!</a>
+                        </label>
+                        <input type="password" id="password" required>
+
+                        <button onclick="login()">Sing in</button>
+                    </form>
+
+
+                    <div id="create-account">
+                        <h3>New to Mega?</h3>
+                        <a href="">Create an account.</a>
+                    </div>
+                </section>
+
+                <section id="cadastro">
+
+                    <span id="top">Join MEGA PHONE</span>
+
+                    <form action="">
+
+                        <Label for="nome-usuario">Username</Label>
+                        <input type="text" id="nome-usuario" required>
+
+                        <Label for="email">Email address</Label>
+                        <input type="text" id="email" required>
+
+                        <Label for="senha">Password</Label>
+                        <input type="password" id="senha" required>
+
+                        <div id="formn-email">
+                            <p>Make sure it's at least 15 characters OR at least 8 characters including a number and a
+                                lowercase
+                                letter.</p>
+
+                            <h3>Email preferences</h3>
+                            <input type="checkbox" id="checkbox-email">
+                            <span>Send me occasional product updates, announcements, and offers.</span>
+                        </div>
+
+                        <button id="criar-conta">Create account</button>
+
+                    </form>
+                </section>
+            </div>
+
+            <div id="logo">
+
+                <i class="fas fa-mobile-alt" id="icone">
+                    <h1>MEGA PHONE</h1>
+                </i>
+                <div id="redes-sociais">
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                </div>
+                <h2>Enticing statement goes here.</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit cupiditate vero, unde dolores,
+                    optio,
+                    consequuntur veritatis earum eveniet minima nobis officia. Est amet corporis consequuntur! Sapiente
+                    neque
+                    error ea!</p>
+
+                <div id="loja">
+                    <a href="">
+                        <img src="./imagens/android.png" alt="Google Play">
+                    </a>
+                    <a href="">
+                        <img src="./imagens/ios.png" alt="App Store">
+                    </a>
+                </div>
+            </div>
+
+            <input type="checkbox" id="open-close">
+
+            <label for="open-close" id="btn-open">
+                <i class="fas fa-align-justify"></i>
+            </label>
+
+            <label for="open-close" id="btn-close">
+                <i class="fas fa-align-right"></i>
+            </label>
+
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </nav>
+
+
+
+
+    </header>
+
+    <section id="next-generation">
+        <h2>It's the next generation of location based networking</h2>
+
+        <article>
+            <i class="fas fa-database"></i>
+            <h3>Section Title</h3>
+            <h4>Heading of this section</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic laudantium dignissimos itaque
+                sunt.</p>
+        </article>
+
+        <article>
+            <i class="fas fa-user-circle"></i>
+            <h3>Section Title</h3>
+            <h4>Heading of this section</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic laudantium dignissimos itaque
+                sunt.</p>
+        </article>
+
+        <article>
+            <i class="fas fa-file-video"></i>
+            <h3>Section Title</h3>
+            <h4>Heading of this section</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic laudantium dignissimos itaque
+                sunt.</p>
+        </article>
+
+    </section>
+
+    <!-- See how it works -->
+    <section id="its-works">
+        <h2>See how it works</h2>
+
+        <!-- flex container -->
+        <article>
+            <!-- flex items -->
+            <div class="heading-goes">
+                <!-- flex container -->
+                <i class="fas fa-pen-square"></i><!-- flex items -->
+
+                <!-- flex items -->
+                <h3>Heading goes here</h3>
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi obcaecati rem nemo modi.
+                    Amet
+                    officiis quia et repellendus consectetur. Sunt vitae non quas in id commodi eius pariatur
+                    modi.
+
+                </p>
+
+            </div>
+            <img src="./imagens/celular.png" alt="CELULAR">
+        </article>
+
+        <!-- flex container -->
+        <article class="inverso">
+            <!-- flex items -->
+            <div class="heading-goes">
+                <!-- flex container -->
+                <i class="fas fa-pen-square"></i><!-- flex items -->
+
+                <!-- flex items -->
+                <h3>Heading goes here</h3>
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi obcaecati rem nemo modi.
+                    Amet
+                    officiis quia et repellendus consectetur. Sunt vitae non quas in id commodi eius pariatur
+                    modi.
+
+                </p>
+
+            </div>
+            <img src="./imagens/celular-inverso.png" alt="CELULAR">
+        </article>
+
+        <!-- flex container -->
+        <article>
+            <!-- flex items -->
+            <div class="heading-goes">
+                <!-- flex container -->
+                <i class="fas fa-pen-square"></i><!-- flex items -->
+
+                <!-- flex items -->
+                <h3>Heading goes here</h3>
+                <p>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi obcaecati rem nemo modi.
+                    Amet
+                    officiis quia et repellendus consectetur. Sunt vitae non quas in id commodi eius pariatur
+                    modi.
+
+                </p>
+
+            </div>
+            <img src="./imagens/celular-3.png" alt="CELULAR">
+        </article>
+    </section>
+    <section id="contato">
+        <h2>Get it touch</h2>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" autocomplete="off" required>
+
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" autocomplete="off" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <button onclick="saudacao()">Submit</button>
+            <button onclick="limpar()">Clear</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Tinylove 2020</p>
+    </footer>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

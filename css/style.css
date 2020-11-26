@@ -1,0 +1,1031 @@
+/* IMPORTS CSS */
+
+
+/* IMPORT FONT */
+@font-face{
+    src: url(../fonts/Oxygen/Oxygen-Regular.ttf);
+    font-family: Oxygen-Regular;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Oxygen-Regular;
+}
+
+/* Mobile First */
+
+/* ----------- HEADER ----------- */
+header{
+    background-image: url(../imagens/fundo-celular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid black;
+}
+header #cadastro-login{
+    background-color: black;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 10%;
+  
+}
+
+/* Sing in */
+header #cadastro-login label{
+    
+    font-size: 15px;
+    padding: 2px 5px 2px 5px;
+    margin:  3px 5px 3px 5px;
+    background-color:  goldenrod;
+    border-radius: 5px;
+    color: black;
+}
+section#login {
+    
+    position: fixed;
+    z-index: 2;
+    top: -100%;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: top 0.5s, opacity 0.7s;
+
+}
+section#login i {
+    margin-top: 10px;
+    font-size: 50px;
+    color: goldenrod;
+}
+section#login h1{
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+    color: goldenrod;
+}
+section#login form {
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+section#login label,
+input,
+a{
+    font-weight: 500;
+
+}
+
+section#login label{
+    font-size: 14px;
+    width: 85%;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+
+
+section#login  a{
+    background-color: transparent;
+    text-decoration: none;
+        color: blue;
+}
+section#login input{
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+section#login #forget{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+section#login button{
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    border: none;
+    margin-bottom: 15px;
+
+}
+
+section #create-account{
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+section #create-account h3{
+    padding-right: 10px;
+} 
+
+/* Position Sing in  top */
+header #cadastro-login #sing-in{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+header #cadastro-login #sing-in:checked~#login{
+    top: 0;
+    opacity: 1;
+}
+header #cadastro-login #close-login{
+    position: fixed;
+    z-index: 3;
+    bottom: -20%;
+    right: 48%;
+    transition: bottom 0.8s;
+}
+header #cadastro-login #sing-in:checked~#close-login{
+    bottom: 5%;
+    right: 48%;
+}
+
+header #cadastro-login #sing-in{
+    display: none;
+}
+
+/* Sing Up */
+section#cadastro {
+    
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: left 0.5s, opacity 0.7s;
+
+}
+
+section#cadastro #top{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 50px;
+    color: goldenrod;
+}
+
+section#cadastro span{
+    font-size: 14px;
+    }
+
+section#cadastro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
+    
+    width: 90%;
+    
+}
+
+section#cadastro label{
+    
+    font-size: 14px;
+    width: 85%;
+    background-color: transparent;
+}
+section#cadastro input{
+
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+section#cadastro #formn-email{
+
+    width: 85%;
+    margin-bottom: 20px;
+
+}
+
+section#cadastro #formn-email p{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+section#cadastro #formn-email h3{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+section#cadastro #formn-email  #checkbox-email{
+    width: 15px;
+    height: 15px;
+}
+
+section#cadastro button{
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    margin-bottom: 15px;
+    border: none;
+
+
+}
+
+/* Position Sing Up left*/
+header #cadastro-login #sing-up{
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+}
+header #cadastro-login #sing-up:checked~#cadastro{
+    left: 0;
+    opacity: 1;
+}
+header #cadastro-login #close-cadastro{
+    position: fixed;
+    z-index: 6;
+    bottom: -20%;
+    right: 48%;
+    transition: bottom 0.8s;
+}
+header #cadastro-login #sing-up:checked~#close-cadastro{
+    bottom: 5%;
+    right: 48%;
+}
+
+header #cadastro-login #sing-up{
+    display: none;
+}
+
+/*  Menu Position */
+
+header nav {
+    /* Posicionada referente a viewport */
+    
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -80%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: right 0.4s, opacity 0.7s;
+
+
+}
+header nav a{
+
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border-left: 2px solid white;
+    color: goldenrod;
+    text-decoration: none;
+}
+header label{
+   
+    font-size: 25px;
+
+}
+
+header #open-close{
+    display: none;
+}
+
+header #btn-open{
+    position: fixed;
+    z-index: 0;
+    top: 40px;
+    right: 5px;
+}
+
+header #btn-close{
+    position: fixed;
+    z-index: 2;
+    top: 40px;
+    left: -10%;
+    transition: left 0.8s;
+}
+
+/* Position right  */
+header #open-close:checked~nav{
+    right: 0;
+    opacity: 1;
+}
+
+header #open-close:checked~#btn-close{
+    left: calc( 20% + 10px);
+    top: 40px;
+}
+
+/* ----------- HEADER ----------- */
+header #logo{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(192, 192, 192, .97);
+}
+
+
+header #logo #icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 50px;
+    color: goldenrod;
+}
+
+
+header #logo h1 {
+    font-family: Oxygen-Regular;
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+header #logo #redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;  
+    width: 25%; 
+    
+    text-decoration: none;
+}
+header #logo #redes-sociais a {    
+    color: white ;
+}
+
+header #logo h2{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: white ;
+    font-family: Oxygen-Regular;
+
+}
+header #logo #loja{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 20px;
+}
+header #loja a{
+    width: 35%;
+}
+header #loja a img{
+    width: 100%;
+}
+
+header #logo p{
+    display: none;
+    color: white ;
+}
+/* ----------- NEXT GENERATION ----------- */
+section#next-generation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#next-generation h2{
+    order: 4;
+    padding: 45px 25px;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: goldenrod;
+}
+
+section#next-generation article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+  
+
+}
+section#next-generation article i {
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+section#next-generation article h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+section#next-generation article h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+section#next-generation article p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* ----------- ITS WORKS ----------- */
+section#its-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#393b47;
+    padding-top: 25px;
+}
+section#its-works h2{
+    width: 90%;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section#its-works article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+section#its-works article img {
+    margin-top: 20px;
+}
+section#its-works article .heading-goes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+section#its-works article .heading-goes i{
+
+    color: goldenrod;
+    background-color: black;
+    font-size: 1.5rem;
+    line-height: 0.8;
+    width: 16px;
+    height: 15px;
+    text-align: center;
+}
+
+section#its-works article .heading-goes h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section#its-works article .heading-goes p{
+    
+    font-size: 15px;
+    line-height: 1.3rem;
+    margin-top: 20px;
+}
+
+section#its-works article.inverso{
+    background-color: #2b2f37;
+}
+/* CONTACT FORM */
+section#contato{
+    
+    padding-top: 20px;
+    background-color: goldenrod;
+}
+section#contato h2{
+    width: 100%;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section#contato form label, section#contato form input, section#contato form button {
+    font-size: 14px;
+
+}
+section#contato form {
+    padding: 0 20px 20px;
+}
+
+section#contato label{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+section#contato form input {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    /* color: white; */
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color .5s;
+}
+section#contato form input:focus, section#contato form textarea:focus {
+    background-color: rgb(104, 102, 102);
+}
+
+section#contato form textarea {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color .5s;
+}
+section#contato form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    color: goldenrod;
+    outline: none;
+    border: none;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    background-color: black;
+}
+footer p {
+    text-align: center;
+    color: goldenrod;
+}
+
+@media screen and (min-width: 360px) and (max-width: 678px) {
+    header .fundo h2 {
+        width: 90%;
+    }
+}
+
+/* ---------- TABLETS ---------- */
+/* ----------- HEADER ----------- */
+@media screen and (min-width: 768px) {
+   
+  
+    /* Sing in */
+    header #cadastro-login label{
+    
+        font-size: 20px;
+        padding: 2px 5px 2px 5px;
+        margin:  3px 5px 3px 5px;
+        background-color:  goldenrod;
+        border-radius: 5px;
+        color: black;
+    }
+
+    section#login i{
+        font-size: 80px;
+    }
+
+    section#login h1{
+        margin: 10px 0 20px 0;
+        font-size: 30px;
+        color: goldenrod;
+    }
+
+    section#login label{
+        font-size: 14px;
+        width: 85%;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        background-color: transparent;
+    }
+    
+   
+    section#login input{
+        height: 35px;        
+    }
+
+    section#login button{
+        height: 35px;        
+    }
+
+    header #cadastro-login #sing-in:checked~#close-login{
+        bottom: 5%;
+    }
+
+    /* Sing Up */
+
+    section#cadastro #top{
+        font-size: 18px;
+    }
+
+    section#cadastro label{
+        margin-top: 20px;
+        font-size: 16px;
+        background-color: transparent;
+    }
+
+    section#cadastro input{
+
+        height: 35px;
+    }
+    section#cadastro #formn-email p{
+        font-size: 14px;
+  
+    }
+
+    section#cadastro #formn-email h3{
+        font-size: 16px;
+    }
+
+    section#cadastro #formn-email  #checkbox-email{
+        width: 20px;
+        height: 20px;
+    }
+
+    section#cadastro button{
+
+        height: 35px;
+    }
+
+    header #cadastro-login #sing-up:checked~#close-cadastro{
+        bottom: 5%;
+     
+    }
+
+    /*  Menu Position */
+    header label{
+   
+        font-size: 30px;
+    
+    }
+    /* ----------- HEADER ----------- */
+    header #logo {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    header #logo #icone{
+       font-size: 70px;
+    }
+
+    header #logo h1 {
+        
+        font-size: 25px;
+    }
+
+    header #logo #redes-sociais{
+        font-size: 20px;
+    }
+
+    header #logo h2{
+        font-size: 20px;
+    }
+
+    header #logo p{
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    header #loja a{
+        width: 20%;
+        margin-top: 20px;
+    }
+
+    header #loja a img{
+        width: 100%;
+    }
+    /* ----------- NEXT GENERATION ----------- */
+    section#next-generation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section#next-generation h2 {
+        padding: 45px 125px;
+    }
+
+    section#next-generation article {
+        width: 100%;
+    
+    }
+
+    section#next-generation article:last-of-type {
+        margin-bottom: 15px;
+    }
+
+    section#next-generation article i{
+        font-size: 25px;
+    }
+
+    section#next-generation article i, section#next-generation article h3, section#next-generation article h4, section#next-generation article p {
+        margin-top: 20px;
+    }
+    /* ----------- ITS WORKS ----------- */
+    section#its-works article {
+        padding: 0 30px;
+    }
+
+    section#its-works article .heading-goes i{
+
+        font-size: 2.5rem;
+        line-height: 0.8;
+        width: 33px;
+        height: 26px;
+    }
+
+    section#its-works article .heading-goes h3{
+        font-size: 30px;
+    }
+    
+    section#its-works .heading-goes div p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    section#its-works article img {
+        margin-top: 30px;
+    }
+    /* CONTACT FORM */
+    section#contato form {
+        padding: 0 30px 30px;
+    }
+    section#contato h2 {
+        font-size: 3rem;
+    }
+    section#contato form input {
+        height: 50px;
+        padding: 15px;
+    }
+    section#contato form label, section#contato form input, section#contato form button {
+        font-size: 1.5rem;
+    }
+}
+
+/* --------- DESKTOP --------- */
+
+@media screen and ( min-width: 992px ){
+
+    header{
+        border: none;
+    }
+
+    header #logo{
+        background-color: transparent;
+    }
+
+    header #btn-open {
+        position: static;
+        display: none;
+    }
+
+    header #btn-close {
+        position: static;
+        display: none;
+    }
+    
+    header nav {
+        position: static;
+        transition: none;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: black;
+        border: 3px solid goldenrod;
+    }
+     header nav a{
+        text-align: center;
+        border: none;
+        margin-bottom: 5px;
+        padding: 10px 10px;
+    }
+    header #logo #social-icons {
+        width: 50px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    header #logo h2 {
+        
+        align-self: flex-end;
+        width: 50%;
+        margin-top: 35px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    header #logo p {
+        align-self: flex-end;
+        width: 50%;
+        padding-right: 90px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    header #logo #loja{
+        align-self: flex-end;
+        padding-right: 80px;
+        width: 53%;
+
+    }
+    header #loja a{
+        width: 35%;
+    }
+
+    section#login form{
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    section#login label{
+        
+        font-size: 16px;
+        width: 70%;
+       
+    }
+
+    section#login input{
+        font-size: 16px;
+        width: 70%;
+        
+    }
+
+    section#login button{
+        font-size: 16px;
+        width: 70%;
+        
+    }
+
+    section #create-account{
+        font-size: 16px;
+        width: 70%;
+    }
+
+    section#cadastro #top{
+        font-size: 22px;
+    }
+
+    section#cadastro form{
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    section#cadastro label{
+        
+        font-size: 16px;
+        width: 70%;
+       
+    }
+
+    section#cadastro input{
+        font-size: 16px;
+        width: 70%;
+        
+    }
+
+    section#cadastro #formn-email{
+      
+        width: 70%;
+    }
+
+    section#cadastro button{
+        width: 70%;
+        font-size: 16px;
+    }
+
+    header #cadastro-login #sing-up:checked~#close-cadastro{
+        bottom: 2%;
+        right: 48%;
+    }
+    section#next-generation {
+        flex-direction: row;
+        justify-content: center;
+    }
+    section#next-generation article {
+        width: 30%;
+        max-width: 340px;
+    }
+    section#next-generation h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    /* ----------- IT'S WORK ----------- */
+    section#its-works {
+        align-items: stretch;
+    }
+
+    section#its-works h2 {
+        font-size: 2rem;
+    }
+
+    section#its-works article {
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+    section#its-works article.inverso {
+        flex-direction: row-reverse;
+    }
+
+    section#its-works .inverso .heading-goes {
+        margin-right: 0;
+        margin-left: 100px;
+        
+    }
+
+    section#its-works .heading-goes div h3 {
+        margin: 0;
+        text-align: left;
+    }
+
+    section#its-works .heading-goes {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 300px;
+        margin-right: 100px;
+       
+    }
+    section#its-works .heading-goes i {
+        margin-top: 0;
+        margin-right: 20px;
+        font-size: 2rem;
+        width: 26px;
+        height: 25px;
+    }
+    section#its-works .heading-goes div h3 {
+        font-size: 1.5rem;
+    }
+    section#its-works .heading-goes div p {
+        font-size: 0.97rem;
+        line-height: 1.2rem;
+    }
+    section#its-works article img {
+        
+        align-self: flex-end;
+        width: 200px;
+    } 
+    /* CONTACT FORM */
+    section#contato h2 {
+        font-size: 2rem;
+    }
+
+    section#contato form {
+       
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    section#contato form label, 
+    section#contato form input, 
+    section#contato form button {
+        font-size: 1rem;
+    }
+
+    section#contato form input {
+        height: 40px;
+        padding: 8px;
+    }
+}
+
+
